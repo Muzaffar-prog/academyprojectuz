@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <br>
+    
+    <h3> Ro'yxatdan o'tgan talabalar </h3>
+    <hr>
+    <h5>Yangi kelgan xabar ({{unreadCount}})</h5>
+    <table class="table table-light table-striped">
+        <thead>
+        <tr>
+            <th>ism</th>
+            <th>telefon nomer</th>
+            <th>kurs tartibi</th>
+            <th>ariza qoldirdgan vaxt</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for message in inbox %}
+            {% if message.is_read %}
+            <tr>
+                {% else %}
+                <tr style="font-weight: 900;">
+            {% endif %}
+        <td>{{message.name}}</td>
+        <td><a href="{% url 'message' message.id %}">{{message.phone}}</a></td>
+            <td>{{ message.course_name }}</td>
+        <td>{{ message.created }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

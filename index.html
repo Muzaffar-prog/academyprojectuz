@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+    <!-- carusel-add -->
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-success" role="alert">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
+<div class="box">
+    <div class="container carusel-box">
+        <div class="anime">
+            <div class="img-box support" style="background-image: url('./images/bg.jpg');">
+                <div class="birga">
+                    <div class="width">
+                        <h1 class="box-h1 h5647">Assalamu alaykum, <br> Zamon IT academy'ga <br> xush Kelibsiz!</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Assosiy Maqsadimiz -->
+<div class="container">
+    <div class="endi-osha">
+        <h1 class="h12">Bizning Maqsadimiz</h1>
+        <p class="biznig malumot">
+            Bizning eng birinchi maqsadimiz O'zbekistonda kuchli senior dasturchilarni yetishtirib chiqarish! </p>
+    </div>
+    <div class="hero-main">
+        <a href="#" class="rek">
+            <div class="rek-img">
+                <img src="../static/img/robot.png" alt="">
+            </div>
+            <h3 class="rek-h3"> Test rejim... </h3>
+            <p class="rek-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure a quibusdam velit soluta
+                dignissimos earum delectus officia porro! Nesciunt nisi, ab ex veritatis quos et excepturi enim
+                doloribus quod
+                praesentium!</p>
+        </a>
+        <a href="#" class="rek">
+            <div class="rek-img">
+                <img src="../static/img/robot.png" alt="">
+            </div>
+            <h3 class="rek-h3">Test rejim...</h3>
+            <p class="rek-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure a quibusdam velit soluta
+                dignissimos earum delectus officia porro! Nesciunt nisi, ab ex veritatis quos et excepturi enim
+                doloribus quod
+                praesentium!</p>
+        </a>
+        <a href="#" class="rek lom">
+            <div class="rek-img">
+                <img src="../static/img/robot.png" alt="">
+            </div>
+            <h3 class="rek-h3">Test rejim...</h3>
+            <p class="rek-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure a quibusdam velit soluta
+                dignissimos earum delectus officia porro! Nesciunt nisi, ab ex veritatis quos et excepturi enim
+                doloribus quod
+                praesentium!</p>
+        </a>
+    </div>
+</div>
+    <!-- product -->
+<div class="product">
+    <div class="container product-box">
+        <div data-aos-duration="2000" data-aos="fade-up" class="line-1">
+            <div class="line-left">
+                <h2 class="math-h2">PYTHON</h2>
+                <p class="plar">Hozirgi kunda eng sodda dasturlash tili <br> Va yangi o'rganuvchilar uchun  
+                    <br> To'g'ri tanlov! </p>
+            </div>
+            <div class="img-math">
+                <img src="../static/img/Python-Logo.png" alt="">
+            </div>
+        </div>
+        <div data-aos-duration="2000" data-aos="fade-down" class="line-1 reverce">
+            <div class="img-math">
+                <img src="../static/img/php-logo.png" alt="">
+            </div>
+            <div class="line-left">
+                <h2 class="math-h2">PHP</h2>
+                <p class="plar"> Backend uchun yaxshi til <br> Bir necha yildan buyon 
+                    <br> PHP Yaxshi natija ko'rsatib kelmoqda</p>
+            </div>
+        </div>
+        <div data-aos-duration="2000" data-aos="fade-up" class="line-1">
+            <div class="line-left">
+                <h2 class="math-h2">JAVASCRIPT</h2>
+                <p class="plar"> Frontend uchun juda to'g'ri tanlov<br>JAVASCRIPT ko'p funksiyali 
+                    <br> dasturlash tili hisoblanadi! </p>
+            </div>
+            <div class="img-math">
+                <img src="../static/img/java-logo.png" alt="">
+            </div>
+        </div>
+        <div data-aos-duration="2000" data-aos="fade-down" class="line-1 reverce">
+            <div class="img-math">
+                <img src="../static/img/swift-logo.png" alt="">
+            </div>
+            <div class="line-left">
+                <h2 class="math-h2"> SWIFT </h2>
+                <p class="plar"> IOS uchun dasturlar <br> Yaratish imkonini beruvchi
+                    <br> Kuchli til! </p>
+            </div>
+        </div>
+        <div data-aos-duration="2000" data-aos="fade-up" class="line-1">
+            <div class="line-left">
+                <h2 class="math-h2">FLUTTER</h2>
+                <p class="plar">Bu dasturlash tilida <br> IOS va Andiroid uchun
+                    <br> Barcha dasturlash yaratish imkoni beradi! </p>
+            </div>
+            <div class="img-math">
+                <img src="../static/img/Fluttir-logo.png" alt="">
+            </div>
+        </div>
+        <!-- <div data-aos-duration="2000" data-aos="fade-down" class="line-1 reverce">
+            <div class="img-math">
+                <img src="../static/img/arxitektor.jpg" alt="">
+            </div>
+            <div class="line-left">
+                <h2 class="math-h2">CHIZMACHILIK</h2>
+                <p class="plar">Hozirgi kunda eng daromadli fandan <br> matematika fanidan bo`yicha siz
+                    <br> muvaqqiyatga erishishingiz mumkin.</p>
+            </div>
+        </div> -->
+    </div>
+</div>
+{% endblock %}

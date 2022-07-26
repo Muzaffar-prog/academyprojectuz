@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <br>
+    <h1> Shaxsiy sahifa </h1>
+    <hr>
+    <p>Ismi: {{message.name}}</p>
+    <p>Telefon nomeri: {{message.phone}}</p>
+    <p>Kurs tartibi: {{message.course_name}}</p>
+</div>
+{% endblock %}
